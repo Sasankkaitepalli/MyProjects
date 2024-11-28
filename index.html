@@ -2,86 +2,134 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Webpage</title>
-    <style>
-        .photo {
-            position: absolute;
-            top: 15px;       /* Distance from the top */
-            right: 20px;     /* Distance from the right */
-            width: 150px;    /* Adjust the size of the image */
-            height: 150px;   /* Adjust the height for passport-size proportions */
-            border: 1px solid black;  /* Optional: Add a border */
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <h1>Sasank Kaitepalli</h1>
-        <p>I am a dedicated individual looking for a company that helps me to enhance my skills and
-        sharpen my leadership qualities by having me to take up the challenging assignments<br> and work
-        on them along with my team. which helps me to develop myself. I usually work on Free and
-        Open Source Technologies.</p>
-    <img src="images/Sasank.jpeg" alt="Photo" class="photo">
-    <h2><b>TECHNICAL STRENGTHS</b></h2>
-    <h4>Programming Languages</h4>
-        <p>Python, C programming, Basics of Java</p>
-    <h4>Software & Tools</h4>
-        <p>HTML, CSS, JavaScript, Git, SQL,Linux.</p>
-    <h4>Project Management Skills</h4>
-        <p>Task & Time Management, Work Distribution, Logical Thinking,Team Leading, Critical Analysis</p>
-    <h3><b>PROJECTS</b></h3>
-    <h4><strong><b>Interactive Web-Based Simulations for Balaswecha</b></strong> </h4>
-        <p>I along with my team have developed a website along with some simulations on” Forest and its
-        animal’s” and later deployed the website into an OS named Balaswecha and made the OS
-        available for the government school students.<br>
-        Technologies used: HTML, CSS, JS, Bootstrap, Git, Agile. </p>
-    <h5><b>Exploratory data analysis in Python</b></h5>
-        <p>I have built a dynamic website for an online Doctor Health Management System, where I have
-            used MYSQL database to store the sign-up data and other data like Patients details.<br> 
-            I have 
-            used JDBC to connect to the data source and to retrieve and store the data based on the
-            requirement.<br>
-            Technologies used: HTML, CSS, JS, JDBC, SQL. </p>
-        <p><em>I have done My certifications in Orcale</em> and <i>Azure</i> </p>
-    <ul>
-        <li>Orcale Infrastructure</li>
-        <li>ORCALE Data Science </li>
-    </ul>
-    <img src="images/orcale.png" alt="Sample Image">
-    <ol>
-        <li>Azure AZ900</li>
-        <li>Azure AI Fundamentals</li>
-    </ol>
-    <img src="images/Azure.png" alt="Sample Image">
-    <h3><b>Educational Details</b></h3>
-    <table border="1    ">
-        <tr>
-            <th>Name</th>
-            <th>Grade</th>
-            <th>Marks</th>
-        </tr>
-        <tr>
-            <td>Narayana</td>
-            <td>12th</td>
-            <td>85%</td>
-        </tr>
-        <tr>
-            <td>KLU</td>
-            <td>B.Tech</td>
-            <td>87%</td>
-        </tr>
-    </table>
-    <hr>
-    <form action="/submit-query" method="post">
-        <label for="query">Any queries:</label>
-        <input type="text" id="query" name="query" placeholder="Enter your query here" required>
-        <br><br>
-        <button type="submit">Submit</button>
-    </form>
-
-
-    <div>
-        <p><center><span style="color: red;">Thank You!!!!!!</center></span> </p>
+<!--    
+    <header class="header">
+         <nav class="navbar">
+            <a href="#">Save</a>
+            <a href="#">Permalink</a>
+            <a href="#">Contact me</a>
+        </nav> -->
+      
+    <div class="profile">
+        <h2>JAVA FULL-STACK DEVELOPER</h2>
+        <h1>Sasank Kaitepalli</h1>
+        <p>I’m a full-stack web developer and tech mad from Andhra.</p>
+        <button class="cv-button">CV</button>
+        <img src="images/Sasank.jpeg" alt="Profile" class="profile-image">
     </div>
+
+    <section class="about" id="about">
+        <h2>About <span>me</span></h2>
+        <p>I am a dedicated individual looking for a company that helps me to enhance my skills and
+            sharpen my leadership qualities by having me to take up the challenging assignments and work
+            on them along with my team which helps me to develop myself. I usually work on Free and
+            Open Source Technologies.</p>
+        <button class="contact-button">Contact me</button>
+    </section>
+
+    
+    <section class="skills" id="skills">
+        <h2>My <span>skills</span></h2>
+        <div class="skills-list">
+            <p>CSS</p><p>Tailwind</p><p>JavaScript</p><p>Angular</p>
+            <p>Laravel</p><p>React</p><p>Ruby/Rails</p><p>Node.js</p>
+        </div>
+    </section>
+    <!-- Projects Section -->
+<section class="projects" id="projects">
+    <h2>My <span>projects</span></h2>
+    <div class="project-grid">
+        <div class="project-item" style="background-image: url('project1.jpg');">
+            <div class="project-info">
+                <p>Project name</p>
+                <span>Aug 2022</span>
+            </div>
+        </div>
+        <div class="project-item" style="background-image: url('project2.jpg');">
+            <div class="project-info">
+                <p>Project name</p>
+                <span>May 2022</span>
+            </div>
+        </div>
+        <div class="project-item" style="background-image: url('project3.jpg');">
+            <div class="project-info">
+                <p>Project name</p>
+                <span>Feb 2022</span>
+            </div>
+        </div>
+        <div class="project-item" style="background-image: url('project4.jpg');">
+            <div class="project-info">
+                <p>Project name</p>
+                <span>Dec 2021</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section class="blog" id="blog">
+    <h2>My <span>blog</span></h2>
+    <button class="see-all">See all</button>
+    <div class="blog-grid">
+        <div class="blog-item" style="background-image: url('blog1.jpg');">
+            <div class="blog-info">
+                <h3>React Suspense and React.lazy by Example</h3>
+                <p>When you start...react.suspense().</p>
+                <a href="#">Read more →</a>
+            </div>
+        </div>
+        <div class="blog-item" style="background-image: url('blog2.jpg');">
+            <div class="blog-info">
+                <h3>Managing State with useReducer, useState</h3>
+                <p>Learn how to...using react hooks.</p>
+                <a href="#">Read more →</a>
+            </div>
+        </div>
+        <div class="blog-item" style="background-image: url('blog3.jpg');">
+            <div class="blog-info">
+                <h3>5 Command Line Tips and Tricks</h3>
+                <p>Master the CLI with these essential tips...</p>
+                <a href="#">Read more →</a>
+            </div>
+        </div>
+        <div class="blog-item" style="background-image: url('blog4.jpg');">
+            <div class="blog-info">
+                <h3>10 Things to Know About ES6 Before Learning React JS</h3>
+                <p>Understanding ES6 concepts is crucial...</p>
+                <a href="#">Read more →</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2>Contact <span>me</span></h2>
+    <form action="#" method="post">
+        <input type="text" placeholder="Full name" name="name" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <textarea placeholder="Message" name="message" required></textarea>
+        <button type="submit" class="send-button">Send</button>
+    </form>
+</section>
+
+<!-- Follow Me Section -->
+<section class="follow-me">
+    <h2>Follow <span>me</span></h2>
+    <div class="social-icons">
+        <a href="#"><img src="discord-icon.png" alt="Discord"></a>
+        <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+    </div>
+</section>
+
 
 </body>
 </html>
